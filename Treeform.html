@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tree Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Tree Survaey Form</h2>
+            <h5>A Survey from on the health of the environment</h5>
+            <form action="/submit-data">
+                <label for="name">Name:</label>
+                <input type="text" name="username" placeholder="Enter your name e.g John Doe" id="name">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="xyz@someplace.com" name="userid" id="email">
+                <label for="age">Age (Optional):</label>
+                <input type="text" name="yourage" placeholder="10" id="age">
+                <p>Select continent of residence </p>
+                <label for="selectbox"></label>
+                <select name="data" id="selectbox" size="1" autofocus>
+                    <option value="North America"></option>
+                    <option value="South America"></option>
+                    <option value="East America"></option>
+                    <option value="West America"></option>
+                </select>
+                <h3>Choose your prefered gender </h3>
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" value="male" id="male" checked>
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="others">Others:</label>
+                <input type="radio" name="gender" value="others" id="others">
+                <h3>Please select atleast one of the options below:</h3>
+                <label for="option1">I have planted a tree or any other plant:</label>
+              <input type="radio" name="option" value="option1" id="option1">
+              <label for="option2">I take part in community service for the environment:</label>
+              <input type="radio" name="option" value="option2" id="option2">
+              <label for="option3">I promise to plant more from now on:</label>
+              <input type="radio" name="option" value="option3" id="option3">
+              <h3>Any comments or suggessions</h3>
+              <label for="comments"></label>
+              <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Comments/Suggesions.."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>
